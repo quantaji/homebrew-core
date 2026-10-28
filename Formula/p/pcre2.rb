@@ -14,7 +14,7 @@ class Pcre2 < Formula
   bottle do
     root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
     rebuild 1
-    sha256 cellar: :any, tahoe: "894bc41764be4297d4837a22ee6935c66b756857ca99226fd72408280596288b"
+    sha256 cellar: :any, tahoe: "4234fa371f73e4353003609ae3985545357c37d9ffb993c56adf678645eb2c91"
   end
 
   head do
