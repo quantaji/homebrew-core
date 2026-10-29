@@ -18,11 +18,9 @@ class Sqlite < Formula
   no_autobump! because: :incompatible_version_format
 
   bottle do
-    sha256 cellar: :any, arm64_golden_gate: "3c8be00f5e80568f00ff389c40e2a738949b08e199935a4538d2f5d054ef4457"
-    sha256 cellar: :any, arm64_tahoe:       "813f7e1a708d256259a07a0aa113d1d62bad4909d04e7ad24296900b60d18d6a"
-    sha256 cellar: :any, arm64_sequoia:     "38bdb30f8e13a07cdcd86233de9ab4d8db29f2b81cb08c15c202ecea6835ab2f"
-    sha256 cellar: :any, arm64_linux:       "5b011ca14e5e52141cc8eb358171ca7c3a20eec06fc5eb3955114ef0b0551e22"
-    sha256 cellar: :any, x86_64_linux:      "8783ecd3f534390d2cb8733f0c21d6a9e7ae85802226ee4a891bedd8654271b7"
+    root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
+    rebuild 1
+    sha256 cellar: :any, tahoe: "a96f844780c01487dcee0ce9f962f2afc978f658a7934836c264e7addcdfb1c3"
   end
 
   keg_only :provided_by_macos
