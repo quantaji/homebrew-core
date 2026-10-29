@@ -9,11 +9,9 @@ class Coreutils < Formula
   compatibility_version 1
 
   bottle do
-    sha256 arm64_golden_gate: "3230dfda5ec735db8f69a113518a68f8f375f929178cab7c69f618c2606aae9d"
-    sha256 arm64_tahoe:       "38e01cd05410c44aa21fac5ae1700164771cd2028a9e1506f07a743b53a7b73d"
-    sha256 arm64_sequoia:     "c845a8ad8933ec45614e331e4f861862a4766a716ea7c13ee102e50a056c7792"
-    sha256 arm64_linux:       "51e6c759ba3872c59a82610c429bfa343926c48e7f4296bb6a1a23b863545ea2"
-    sha256 x86_64_linux:      "4a261303ec2ac867e77e32b156306fb9f27781a4a5cce754d4e9f249882a00db"
+    root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
+    rebuild 1
+    sha256 tahoe: "75e714bb25955500e06c527e3bd8e6c3d7d4b08e8b6c0c206e144dffa47a7f64"
   end
 
   head do
