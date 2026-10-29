@@ -13,12 +13,9 @@ class Mpg123 < Formula
   end
 
   bottle do
-    rebuild 1
-    sha256 arm64_golden_gate: "56935f0083f633dda54cf02b939659c5476ba40102dd520126e8c3af762633f3"
-    sha256 arm64_tahoe:       "5fcd87caeb9b6e6730d7de5c7738e785c84814c641d1ba9ac578a142d2b033f5"
-    sha256 arm64_sequoia:     "80869bcfed43252f222be16fd652b8e691cb4a144778681853ed76e1d45a7143"
-    sha256 arm64_linux:       "0de606c35f2bf02345bccfc76794d332ae69abe87e62bd40c8ff6ad00f774cd4"
-    sha256 x86_64_linux:      "ce54f5c88411e9986a0a5dca95579a1342e19011c8220355961c3074c823f4f4"
+    root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
+    rebuild 2
+    sha256 tahoe: "2a03632a6ff66f415e0993401f7259831c2017a28c1bb84cc19c07e934fd6fb5"
   end
 
   deny_network_access!
