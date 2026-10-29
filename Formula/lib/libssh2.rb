@@ -15,11 +15,9 @@ class Libssh2 < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_golden_gate: "5556a728575577915ed43171a3881c8aeed3d0d62c24d1eb13798f8a6a03834d"
-    sha256 cellar: :any, arm64_tahoe:       "d51f26fef662c9f562f8d6bee348c9e9fdd2a917cc96bb1b26aa53116b9e7481"
-    sha256 cellar: :any, arm64_sequoia:     "e0cd7666188510728b2e133ddfab7357437f4df5c347dfbe12cc89d8c06bd2ee"
-    sha256 cellar: :any, arm64_linux:       "d429e38ea1d9345a3590d16e1ef79b2d10b9689ac1b02f175c3725ded666d76e"
-    sha256 cellar: :any, x86_64_linux:      "67939513d8a056ee430572396dcae0446e75f7a6963cc34771971fc9eb2dfefb"
+    root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
+    rebuild 1
+    sha256 cellar: :any, tahoe: "543aafb5e86048702b1df3454102c4b6dfaa1b75e393c9c6e4da63a569ba80c2"
   end
 
   head do
