@@ -11,11 +11,9 @@ class PythonAT315 < Formula
   end
 
   bottle do
-    sha256 arm64_golden_gate: "3b1247250932fb08290f3dd05f2e476a958b09600ac9a6e18ff6ab3695cab4ba"
-    sha256 arm64_tahoe:       "f8927deb45d5d8d6261b514879d9a9750ddaa74ad034514cfd8f89fd8d03dd71"
-    sha256 arm64_sequoia:     "3b82ce3572a5aa75a3c0c33da828c1ede71812d7078b9752ed2224c8b02fa871"
-    sha256 arm64_linux:       "6de55bfd498fe213099d2e39cbe5eb506aa3071b79d6a4f9282f1a08b6e44cf7"
-    sha256 x86_64_linux:      "417a51e9c3eb37e23af5779c404bf7cdad283436bdf01ba2464d53562d589a6e"
+    root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
+    rebuild 1
+    sha256 tahoe: "dae563dd70cb0206e52ce7efef92a6da9c0537de927afd357721c8f1a36c85a4"
   end
 
   # https://devguide.python.org/versions/#versions
