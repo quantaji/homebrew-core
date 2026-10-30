@@ -5,6 +5,7 @@ class Stoken < Formula
   sha256 "102e2d112b275efcdc20ef438670e4f24f08870b9072a81fda316efcc38aef9c"
   license "LGPL-2.1-or-later"
   revision 2
+  compatibility_version 1
 
   bottle do
     root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"

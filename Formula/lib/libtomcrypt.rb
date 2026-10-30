@@ -5,6 +5,7 @@ class Libtomcrypt < Formula
   sha256 "d870fad1e31cb787c85161a8894abb9d7283c2a654a9d3d4c6d45a1eba59952c"
   license "Unlicense"
   revision 1
+  compatibility_version 1
 
   bottle do
     root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
