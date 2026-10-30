@@ -7,11 +7,9 @@ class Libxi < Formula
   compatibility_version 1
 
   bottle do
-    sha256 cellar: :any, arm64_golden_gate: "c4ea7477a16ffb5c74162f30ee428b6dad8548fecf6393a07f702a787af307b4"
-    sha256 cellar: :any, arm64_tahoe:       "7a70e3f2cfb5d61ac4c02cb9370945bad39302964df7c48ccca8f4ea794483a1"
-    sha256 cellar: :any, arm64_sequoia:     "e4baaa8a0d044d9b85a9df2705e0c6ae53478c5f5a2a96d5b9de46794b721443"
-    sha256 cellar: :any, arm64_linux:       "0681a48da50c14074169f0ce53e19b115d4eab1cf94ae55aa883c8ce48200d76"
-    sha256 cellar: :any, x86_64_linux:      "74fd528e3d852db335c4d8de289cdec8dd907432ba052eeab4a6ab348f1cf55a"
+    root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
+    rebuild 1
+    sha256 cellar: :any, tahoe: "51c607045c70b32f1d33b47233194b11ab2516bd51657cfa58087e6f73c86140"
   end
 
   depends_on "pkgconf" => :build
