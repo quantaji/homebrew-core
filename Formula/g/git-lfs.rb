@@ -14,11 +14,9 @@ class GitLfs < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "eeebeea7809cebc90dc539f5c72fe607f5418f346e855a159c08d6b453f8b088"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "eeebeea7809cebc90dc539f5c72fe607f5418f346e855a159c08d6b453f8b088"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "eeebeea7809cebc90dc539f5c72fe607f5418f346e855a159c08d6b453f8b088"
-    sha256 cellar: :any_skip_relocation, arm64_linux:       "8f482de6c05507eafc2132cc82400f73687f8768b6d43c6002571eb045f4c158"
-    sha256 cellar: :any,                 x86_64_linux:      "16986c189e2c86839c171a8ce1d6d05baebf5bf34825cfbe6db5cf821306a308"
+    root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, tahoe: "0a9df5152514524f83fbc1007628bc01bdb9f1c7e3b4d05b9a540464c65e25a9"
   end
 
   depends_on "asciidoctor" => :build
