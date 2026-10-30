@@ -6,12 +6,9 @@ class Asciidoctor < Formula
   license "MIT"
 
   bottle do
-    rebuild 2
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "f23e439ed2f428dcdff377e3d8af969460061cecb38bd323bfc54bc5f7c6e299"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "f23e439ed2f428dcdff377e3d8af969460061cecb38bd323bfc54bc5f7c6e299"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "f23e439ed2f428dcdff377e3d8af969460061cecb38bd323bfc54bc5f7c6e299"
-    sha256 cellar: :any_skip_relocation, arm64_linux:       "c6001fecadce7f4eca4a5e590e90e2db74d0af7f9b80ae288c5489aec9b56306"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:      "c6001fecadce7f4eca4a5e590e90e2db74d0af7f9b80ae288c5489aec9b56306"
+    root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
+    rebuild 3
+    sha256 cellar: :any_skip_relocation, tahoe: "3a37f5359a0fe5830149df91897797c462d44c92c61dcbfb814b8b81de74ff50"
   end
 
   # Some gems require >= ruby 2.7
