@@ -15,7 +15,7 @@ class TreeSitter < Formula
   bottle do
     root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
     rebuild 1
-    sha256 cellar: :any, tahoe: "694c7b26d9a69a62bec30ee9963afaa5cf9bd89d111a306bf162d6b2c8a2dc0d"
+    sha256 cellar: :any, tahoe: "f4a05ac7ba57654252d496f3be601b5e54cfb63362882b2ccfb81fd01672d16c"
   end
 
   deny_network_access!
