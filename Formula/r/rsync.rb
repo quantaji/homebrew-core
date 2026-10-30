@@ -8,12 +8,9 @@ class Rsync < Formula
   compatibility_version 1
 
   bottle do
-    rebuild 1
-    sha256 cellar: :any, arm64_golden_gate: "ed7eaefb29afddb3caa23fa9fb196ce22970a80ed122f8f8e8a748c470751969"
-    sha256 cellar: :any, arm64_tahoe:       "d69be3a3d34872a903df96ab8767de96a407819f3d9b80b8d8a75dc738796033"
-    sha256 cellar: :any, arm64_sequoia:     "3398c5c1587212bf7a9d88efaa4728fca79586b8110c6c2fb52ebf2622446879"
-    sha256 cellar: :any, arm64_linux:       "785b41d1bb830876bd483268a7103b2199361c72de9ea6afd0a118e9232432cb"
-    sha256 cellar: :any, x86_64_linux:      "a4b03666566e0693e4cd2016ba8a0104c0ab5c71c8237aeb20d973e1bf6e4b96"
+    root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
+    rebuild 2
+    sha256 cellar: :any, tahoe: "d98c83743ba6dbda27ec02df4b2d85927fb3737cede655e081e66485745e3d67"
   end
 
   depends_on "libidn2"
