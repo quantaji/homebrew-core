@@ -12,11 +12,9 @@ class Xorgproto < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "8327b24ee8a0d4b3cd9dfb6d49eb20a80484c0f25535be6e726d1b908f444514"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "8327b24ee8a0d4b3cd9dfb6d49eb20a80484c0f25535be6e726d1b908f444514"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "8327b24ee8a0d4b3cd9dfb6d49eb20a80484c0f25535be6e726d1b908f444514"
-    sha256 cellar: :any_skip_relocation, arm64_linux:       "14bbb72aa9d9a989ea94f21ca6b31f3f40b1fe337438bf1e9b5b318eb3131899"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:      "14bbb72aa9d9a989ea94f21ca6b31f3f40b1fe337438bf1e9b5b318eb3131899"
+    root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, tahoe: "046808d2b6a6566f97c10eed44001b0bfc8e57247693be9a7d68216a1ad9f3a7"
   end
 
   depends_on "pkgconf" => [:build, :test]
