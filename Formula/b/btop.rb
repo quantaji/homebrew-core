@@ -7,11 +7,9 @@ class Btop < Formula
   head "https://github.com/aristocratos/btop.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "8414523e63c686c1e33e8ccaf225e64e49b98e7c93a36f00ae385b630853227b"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "f7d7c84714637054285b2afb9887ea97d915b85902d66ae4e533baf196639b1b"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "df46dfdc76caf0ae48eb013bb50557baaf3fba82a43fe62047305dd0dc03d194"
-    sha256 cellar: :any,                 arm64_linux:       "da03ce7be074d6e3a844fbb4df04d204d9663c1cc3df9019fd9452774e5defb8"
-    sha256 cellar: :any,                 x86_64_linux:      "0fd909f7c8a4c6252627bca79554041dbcc734c6c94faf4ff0724e0cc89fa07e"
+    root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
+    rebuild 1
+    sha256 tahoe: "fce0d3c978437e0933a0f08a45a8b86d4c1c5626a567a6623721f61b671a7c2d"
   end
 
   depends_on "lowdown" => :build
