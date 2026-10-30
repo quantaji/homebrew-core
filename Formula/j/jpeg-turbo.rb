@@ -17,11 +17,9 @@ class JpegTurbo < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_golden_gate: "3f245f1914445713bba97fbee6b4f7cb379b4e9c91237d12e76ee52c1975ce0e"
-    sha256 cellar: :any, arm64_tahoe:       "d11374b84a9782d88a6f33409c564e92e172a3fb8658eb09aa297063c8271e61"
-    sha256 cellar: :any, arm64_sequoia:     "802413c7772789ae8c9d0444042e9a766bcff1beae3919ea5716022aa9dafce7"
-    sha256 cellar: :any, arm64_linux:       "afdfacef775a3d4468cd8ff4f6c2cf3587e9de8abf66bd18c16e3f12c1822ebb"
-    sha256 cellar: :any, x86_64_linux:      "8873de526f6a410fb8a77077905d4dec1b807d93bc1b5252d1f3ba748b3756fd"
+    root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
+    rebuild 1
+    sha256 cellar: :any, tahoe: "6029fe2bc677ad4bc2d167f878087a5c0edcbe9a34054ca853c756bf6f5e43ab"
   end
 
   depends_on "cmake" => :build
