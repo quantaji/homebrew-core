@@ -6,11 +6,9 @@ class Latexindent < Formula
   license "GPL-3.0-or-later"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "c93e6c51534a030e542eb8fd82df7bc247ce4d9977b69ebadd035eff5a86d70d"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "e440fa2b59881913020b6a4bda2f2722f4724f384cc7c2b671e2e65a0700a349"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "6ffdaca71c671b5872e7a0144fd58232e09a316f040b70810e06e9d9924a6107"
-    sha256 cellar: :any,                 arm64_linux:       "f94061cfaf38655a81c672593d8f24e046f05cbd35a3042d2683bcf26338e13c"
-    sha256 cellar: :any,                 x86_64_linux:      "03002705d4c18aa8250b95ad5fec1d4b8c18a8275b2897f568d6dd455a1d3d45"
+    root_url "https://github.com/quantaji/homebrew-intel-bottles/releases/download/2026-10"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, tahoe: "a680f5527a3e7b5e2fa51e1e5deda4008e63b842fb7ad3acd676a4f7e47c35fa"
   end
 
   depends_on "perl"
